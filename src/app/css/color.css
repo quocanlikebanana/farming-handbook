@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+	--color-rainy: #67899F;
+}
