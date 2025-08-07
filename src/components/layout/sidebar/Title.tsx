@@ -8,12 +8,12 @@ export default function Title() {
 			<h1
 				className="text-xl font-bold text-white"
 			>
-				🌱 Farm Hub
+				Tư Vấn Nông Nghiệp
 			</h1>
 			<p
 				className="text-sm text-gray-400 mt-1"
 			>
-				Agricultural Management
+				Quản lý và tư vấn nông nghiệp thông minh
 			</p>
 		</div>
 	)

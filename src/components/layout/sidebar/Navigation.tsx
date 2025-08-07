@@ -8,12 +8,21 @@ import { Home, Users, BarChart3, FileText, Settings, HelpCircle } from 'lucide-r
 import NavigationLink from './NavigationLink'
 
 const navigationItems: NavigationItem[] = [
-	{ id: 'home', label: 'Dashboard', icon: <Home size={20} />, href: '/', isActive: true },
-	{ id: 'users', label: 'Users', icon: <Users size={20} />, href: '/users' },
-	{ id: 'analytics', label: 'Analytics', icon: <BarChart3 size={20} />, href: '/analytics' },
-	{ id: 'documents', label: 'Documents', icon: <FileText size={20} />, href: '/documents' },
-	{ id: 'settings', label: 'Settings', icon: <Settings size={20} />, href: '/settings' },
-	{ id: 'help', label: 'Help Center', icon: <HelpCircle size={20} />, href: '/help' },
+	{
+		label: 'Cây Lúa',
+		icon: <Home size={20} />,
+		href: '/lua',
+	},
+	{
+		label: 'Thuốc Bảo Vệ Thực Vật',
+		icon: <Users size={20} />,
+		href: '/thuoc'
+	},
+	{
+		label: 'Đất Đai',
+		icon: <BarChart3 size={20} />,
+		href: '/dat'
+	},
 ];
 
 export default function Navigation() {
@@ -28,7 +37,7 @@ export default function Navigation() {
 			>
 				{navigationItems.map((item) => (
 					<NavigationLink
-						key={item.id}
+						key={item.href}
 						item={item}
 					/>
 				))}

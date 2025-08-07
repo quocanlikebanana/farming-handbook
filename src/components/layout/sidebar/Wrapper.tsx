@@ -11,7 +11,7 @@ export default function Wrapper({
 }) {
 	return (
 		<motion.div
-			className="flex-none w-64 bg-gray-900 border-r border-gray-800 flex flex-col"
+			className="w-64 bg-gray-900 border-r border-gray-800 flex flex-col h-full"
 			variants={containerVariants}
 			initial="hidden"
 			animate="visible"
